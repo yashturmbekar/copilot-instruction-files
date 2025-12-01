@@ -17,8 +17,6 @@ class-library architecture/
 .github/
 copilot-instructions.md
 
-yaml
-Copy code
 
 More architectures will be added soon.
 
@@ -31,8 +29,6 @@ Go to any folder, for example:
 
 class-library architecture/.github/copilot-instructions.md
 
-csharp
-Copy code
 
 ### 2️⃣ Copy the `copilot-instructions.md` file  
 Paste it into **your project’s**:
@@ -41,8 +37,6 @@ Paste it into **your project’s**:
 .github/
 copilot-instructions.md
 
-yaml
-Copy code
 
 ### 3️⃣ Restart VS Code / Cursor  
 GitHub Copilot will automatically start using those rules for:
