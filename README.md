@@ -1,147 +1,100 @@
-# 🚀 Copilot Architectures — Ready-Made Instruction Files for Modern Projects
+# 🧠 Copilot Instruction Files Library
 
-This repository contains **production-grade, architecture-specific Copilot instruction files** designed to guide GitHub Copilot into generating **clean, enterprise-level, scalable code**.
+This repository contains a collection of **architecture-specific GitHub Copilot instruction files** that enforce clean project structures, coding standards, and best practices across different kinds of software projects.
 
-Each instruction file is tailored for a different backend or frontend architecture pattern (Clean Architecture, Class Library Architecture, Microservices, Modular Monolith, React Architecture, etc.).  
-These files help teams standardize code quality and allow Copilot to consistently generate code that follows your engineering standards.
-
----
-
-# 📌 Why This Repository Exists
-
-GitHub Copilot is extremely powerful, but its output quality depends on the **instructions you define**.
-
-This repository provides **pre-built `.github/copilot-instructions.md` templates**, allowing you to:
-
-- Standardize coding practices across teams
-- Enforce architecture patterns automatically
-- Kickstart any project with correct boilerplate
-- Avoid inconsistent or low-quality Copilot-generated code
-- Maintain clean folder structures and design patterns
-- Speed up project scaffolding and feature-building
+These instruction files help GitHub Copilot generate **consistent, scalable, production-grade code** for any architecture you choose.
 
 ---
 
 # 📁 Repository Structure
-class-library-architecture/.github/copilot-instructions.md
-microservices-architecture/.github/copilot-instructions.md
 
+Each architecture folder includes a `.github/copilot-instructions.md` file that can be copied directly into any project.
 
+Current structure:
 
+copilot-instruction-files/
+class-library architecture/
+.github/
+copilot-instructions.md
 
-Each folder contains:
+yaml
+Copy code
 
-- **copilot-instructions.md** — The instruction file Copilot uses  
-- Optional: architecture diagrams, folder structures, examples
-
----
-
-# 🧠 How to Use These Instruction Files
-
-### 1. Select your architecture pattern  
-Choose any architecture folder:
-
-
-### **2. Add it to your project**
-
-Create this folder structure in your project:
-/.github/copilot-instructions.md
-
-
-
-Paste the chosen file there.
-
-### **3. Restart VS Code / Cursor**
-
-Copilot will immediately begin generating code that follows:
-
-- Your selected architecture  
-- Your selected folder structure  
-- Your selected patterns & best practices  
-
-### **4. Start coding**
-
-Copilot will now:
-
-- Scaffold files automatically  
-- Follow your naming conventions  
-- Generate correct project structures  
-- Create domain/application/infrastructure layers  
-- Write high-quality tests  
-- Produce consistent, maintainable code  
+More architectures will be added soon.
 
 ---
 
-# 🏗️ Architectures Included
+# 🚀 How to Use
 
-### ✔ Class Library Architecture (C#)
-- Domain / Application / Infrastructure / API  
-- Repository + Service Layers  
-- EF Core / PostgreSQL  
-- Ideal for enterprise monoliths  
+### 1️⃣ Choose an architecture  
+Go to any folder, for example:
 
-### ✔ Clean Architecture
-- Domain-centric  
-- Use Cases, Interfaces, Adapters  
-- Infrastructure plug-ins  
+class-library architecture/.github/copilot-instructions.md
 
-### ✔ Modular Monolith
-- Independent modules  
-- Domain events  
-- Internal isolation  
+csharp
+Copy code
 
-### ✔ Microservices Architecture
-- Separate services  
-- Messaging patterns  
-- API gateway  
+### 2️⃣ Copy the `copilot-instructions.md` file  
+Paste it into **your project’s**:
 
-### ✔ React Architecture
-- React + TypeScript  
-- React Query  
-- Zustand/Redux  
-- Professional folder structure  
+.your-project/
+.github/
+copilot-instructions.md
 
-### ✔ Node (NestJS)
-- Feature-modular structure  
-- Decorator-based APIs  
-- DI pattern  
+yaml
+Copy code
 
-### ✔ Laravel Architecture
-- Models / Controllers / Services  
-- Repositories  
-- API standards  
+### 3️⃣ Restart VS Code / Cursor  
+GitHub Copilot will automatically start using those rules for:
 
-### ✔ FastAPI Architecture
-- Router-modular  
-- DTOs (Pydantic)  
-- Service + Repository pattern  
+- Code generation  
+- Folder scaffolding  
+- API design  
+- Service & repository patterns  
+- DTO and mapping conventions  
+- Testing  
+- Logging  
+- Clean coding practices  
 
-More architectures may be added later.
+### 4️⃣ Start building your project  
+Copilot will now follow **the exact architecture guidelines** from the selected instructions file.
+
+---
+
+# 🏗️ Available Architectures
+
+### ✔ Class Library Architecture (C# / .NET)
+- Domain project  
+- Application project  
+- Infrastructure project  
+- API project  
+- Utilities/shared project  
+- EF Core + PostgreSQL  
+- Repository + Service layers  
+- Clean Architecture principles  
+
+(Other architectures will be added soon.)
 
 ---
 
 # 🤝 Contributing
 
-Contributions are welcome.
+You can add more architecture patterns by:
 
-To add a new architecture:
-
-1. Create a new folder inside `architectures/`
-2. Add `copilot-instructions.md`
-3. Ensure it is complete, strict, and production-ready
-4. Submit a PR
+1. Creating a new folder inside `copilot-instruction-files/`
+2. Adding a `.github/copilot-instructions.md` file
+3. Following the same structure and formatting
+4. Creating a pull request
 
 ---
 
-# ⭐ Support the Project
+# ⭐ Support
 
-If this library helps you:
-
+If you find this repo helpful:
 - ⭐ Star the repository  
-- 🔄 Share it with your team  
-- 🧩 Suggest new architectures in Issues  
+- Share it with other developers  
+- Suggest new architectures in Issues  
 
 ---
 
-Made with ❤️ for developers building **AI-powered, high-quality software architectures**.
-
+Made with ❤️ to help developers build **high-quality, AI-assisted software architectures**.
